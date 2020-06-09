@@ -33,3 +33,9 @@ def factorial_it(n):
         n -= 1
 
     return total
+
+# Review:
+# Space complexity: Iterative!
+# Time complexity: O(n) for both!
+# Readability: Subjective; I prefer recursive approach
+# - Objectively, iterative approach is better
