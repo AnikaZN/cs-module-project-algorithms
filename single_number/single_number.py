@@ -4,8 +4,18 @@ Returns: an integer
 '''
 def single_number(arr):
     # Your code here
+    first = []
+    second = []
 
-    pass
+    for item in arr:
+        if item not in first:
+            first.append(item)
+        else:
+            second.append(item)
+
+    for number in first:
+        if number not in second:
+            return number
 
 
 if __name__ == '__main__':
@@ -13,3 +23,7 @@ if __name__ == '__main__':
     arr = [1, 1, 4, 4, 5, 5, 3, 3, 9, 0, 0]
 
     print(f"The odd-number-out is {single_number(arr)}")
+
+
+# One pass
+# Not sorted
