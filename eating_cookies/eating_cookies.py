@@ -4,15 +4,21 @@ Returns: an integer
 '''
 def eating_cookies(n):
     # Your code here
-    ways = 0
 
     if n <= 0:
         return "Oh no! There's no cookies in the cookie jar!"
 
-    # Can always eat the cookies one at a time
-    ways += 1
+    if n == 1:
+        return 1
 
-    if n // 2 
+    if n == 2:
+        return 2
+
+    # Can always eat the cookies one at a time
+    ways = 1
+
+    # Use // division
+
 
     pass
 

@@ -17,6 +17,8 @@ def single_number(arr):
         if number not in second:
             return number
 
+## space????
+
 
 if __name__ == '__main__':
     # Use the main function to test your implementation

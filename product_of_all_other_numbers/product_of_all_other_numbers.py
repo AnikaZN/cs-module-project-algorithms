@@ -16,6 +16,9 @@ def product_of_all_other_numbers(arr):
 
     return products
 
+# O(n) time!
+# space????
+
 
 if __name__ == '__main__':
     # Use the main function to test your implementation

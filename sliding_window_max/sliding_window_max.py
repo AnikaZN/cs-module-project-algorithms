@@ -6,10 +6,10 @@ def sliding_window_max(nums, k):
     # Your code here
     storage = []
 
-    for num in range(len(nums) - (k - 1)):
+    for num in range((len(nums) - (k - 1))):
         sub_list = []
 
-        while num < k:
+        while len(sub_list) < k:
             sub_list.append(nums[num])
             num += 1
 
@@ -18,20 +18,7 @@ def sliding_window_max(nums, k):
 
     return storage
 
-# def sliding_window_max(nums, k):
-#     # Your code here
-#     storage = []
-#
-#     for num in range(len(nums) - (k - 1)):
-#
-#         for x in range(k):
-#             sub_list = []
-#             sub_list.append(nums[x])
-#
-#             largest = max(sub_list)
-#             storage.append(largest)
-#
-#     return storage
+# Times out! Optimize it!
 
 
 if __name__ == '__main__':
